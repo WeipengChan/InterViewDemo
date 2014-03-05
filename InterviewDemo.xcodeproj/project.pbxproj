@@ -23,6 +23,9 @@
 		F3B1066F18C072F0002DBDC8 /* FirstListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B1066D18C072F0002DBDC8 /* FirstListViewController.xib */; };
 		F3B1067418C08C01002DBDC8 /* BlockDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B1067218C08C01002DBDC8 /* BlockDemoViewController.m */; };
 		F3B1067518C08C01002DBDC8 /* BlockDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B1067318C08C01002DBDC8 /* BlockDemoViewController.xib */; };
+		F3EAB56318C4160300D354F8 /* CircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EAB56218C4160300D354F8 /* CircularProgressView.m */; };
+		F3EAB56718C416AB00D354F8 /* CircularProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EAB56518C416AB00D354F8 /* CircularProgressViewController.m */; };
+		F3EAB56818C416AB00D354F8 /* CircularProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EAB56618C416AB00D354F8 /* CircularProgressViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,11 @@
 		F3B1067118C08C01002DBDC8 /* BlockDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDemoViewController.h; sourceTree = "<group>"; };
 		F3B1067218C08C01002DBDC8 /* BlockDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockDemoViewController.m; sourceTree = "<group>"; };
 		F3B1067318C08C01002DBDC8 /* BlockDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlockDemoViewController.xib; sourceTree = "<group>"; };
+		F3EAB56118C4160300D354F8 /* CircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularProgressView.h; sourceTree = "<group>"; };
+		F3EAB56218C4160300D354F8 /* CircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularProgressView.m; sourceTree = "<group>"; };
+		F3EAB56418C416AB00D354F8 /* CircularProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularProgressViewController.h; sourceTree = "<group>"; };
+		F3EAB56518C416AB00D354F8 /* CircularProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularProgressViewController.m; sourceTree = "<group>"; };
+		F3EAB56618C416AB00D354F8 /* CircularProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircularProgressViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 		F3B1062B18C0718B002DBDC8 = {
 			isa = PBXGroup;
 			children = (
+				F3EAB56018C415E100D354F8 /* KVC Demo */,
 				F3B1067018C086FF002DBDC8 /* block demo */,
 				F3B1066B18C072F0002DBDC8 /* FirstListViewController.h */,
 				F3B1066C18C072F0002DBDC8 /* FirstListViewController.m */,
@@ -168,6 +177,18 @@
 			name = "block demo";
 			sourceTree = "<group>";
 		};
+		F3EAB56018C415E100D354F8 /* KVC Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F3EAB56118C4160300D354F8 /* CircularProgressView.h */,
+				F3EAB56218C4160300D354F8 /* CircularProgressView.m */,
+				F3EAB56418C416AB00D354F8 /* CircularProgressViewController.h */,
+				F3EAB56518C416AB00D354F8 /* CircularProgressViewController.m */,
+				F3EAB56618C416AB00D354F8 /* CircularProgressViewController.xib */,
+			);
+			name = "KVC Demo";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B1064218C0718B002DBDC8 /* InfoPlist.strings in Resources */,
+				F3EAB56818C416AB00D354F8 /* CircularProgressViewController.xib in Resources */,
 				F3B1064A18C0718B002DBDC8 /* Images.xcassets in Resources */,
 				F3B1066F18C072F0002DBDC8 /* FirstListViewController.xib in Resources */,
 				F3B1067518C08C01002DBDC8 /* BlockDemoViewController.xib in Resources */,
@@ -265,10 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EAB56718C416AB00D354F8 /* CircularProgressViewController.m in Sources */,
 				F3B1064818C0718B002DBDC8 /* AppDelegate.m in Sources */,
 				F3B1066E18C072F0002DBDC8 /* FirstListViewController.m in Sources */,
 				F3B1064418C0718B002DBDC8 /* main.m in Sources */,
 				F3B1067418C08C01002DBDC8 /* BlockDemoViewController.m in Sources */,
+				F3EAB56318C4160300D354F8 /* CircularProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +493,7 @@
 				F3B1066218C0718B002DBDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3B1066318C0718B002DBDC8 /* Build configuration list for PBXNativeTarget "InterviewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +502,7 @@
 				F3B1066518C0718B002DBDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
